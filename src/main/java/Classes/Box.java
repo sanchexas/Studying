@@ -5,8 +5,24 @@ public class Box {
     double height;
     double depth;
 
+    //конструктор по умолчанию
+    Box(){
+
+    }
+    //конструктор
+    Box(double weight, double height, double depth){
+        this.weight = weight;
+        this.height = height;
+        this.depth = depth;
+    }
     public double parallepipedVolume(){
         return weight * height * depth;
+    }
+
+    public void setParam(double w, double h, double d){
+        this.weight = w;
+        this.height = h;
+        this.depth = d;
     }
 }
 
@@ -64,3 +80,26 @@ class BoxDemo4{
         System.out.println(box1.parallepipedVolume() + "\n" + box2.parallepipedVolume());
     }
 }
+
+class BoxDemo5{
+    public static void main(String[] args) {
+        Box box1 = new Box();
+        Box box2 = new Box();
+
+        box1.setParam(12,42,12);
+        box2.setParam(21,5,22);
+
+        System.out.println(box1.parallepipedVolume() + "\n" + box2.parallepipedVolume());
+    }
+}
+
+class BoxDemo6{
+    public static void main(String[] args) {
+        Box box1 = new Box(12,34,11);
+        Box box2 = new Box(23,12,64);
+
+        System.out.println(box1.parallepipedVolume() + "\n" + box2.parallepipedVolume());
+    }
+}
+
+
