@@ -25,3 +25,15 @@ class OverLoad{
         System.out.println(res);
     }
 }
+
+
+
+
+class JonasSaysHi{
+    public static void main(String[] args) {
+        String hi = "Hi!";
+        String name = "Jonas";
+
+        System.out.println(name + " says " + hi);
+    }
+}
