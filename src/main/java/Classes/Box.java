@@ -5,9 +5,8 @@ public class Box {
     double height;
     double depth;
 
-    void parallepipedVolume(){
-        double volume = weight * height * depth;
-        System.out.println("Объем параллепипеда равен: " + volume);
+    public double parallepipedVolume(){
+        return weight * height * depth;
     }
 }
 
@@ -46,5 +45,22 @@ class BoxDemo2{
         box1.parallepipedVolume();
         box2.parallepipedVolume();
 
+    }
+}
+
+class BoxDemo4{
+    public static void main(String[] args) {
+        Box box1 = new Box();
+        Box box2 = new Box();
+
+        box1.weight = 12;
+        box1.height = 20;
+        box1.depth = 16;
+
+        box2.weight = 16;
+        box2.depth = 13;
+        box2.height = 21;
+
+        System.out.println(box1.parallepipedVolume() + "\n" + box2.parallepipedVolume());
     }
 }
