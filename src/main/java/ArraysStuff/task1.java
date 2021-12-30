@@ -29,3 +29,21 @@ public class task1 {
         System.out.println("avg = " + avg);
     }
 }
+class TaskPractice{
+    public static void main(String[] args) {
+        double[] array = {2.3, 3.8, 1.6, 8.3, 5.3};
+        double max = array[0];
+        double min = array[0];
+        for (int i = 0; i < array.length; i++) {
+            if (max < array[i]){
+                max = array[i];
+            }
+            if (min > array[i]){
+                min = array[i];
+            }
+        }
+        System.out.println("Максимальное значение = " + max);
+        System.out.println("Минимальное значение = " + min);
+
+    }
+}
