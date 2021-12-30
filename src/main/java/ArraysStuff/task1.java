@@ -34,6 +34,7 @@ class TaskPractice{
         double[] array = {2.3, 3.8, 1.6, 8.3, 5.3};
         double max = array[0];
         double min = array[0];
+        double avg = 0;
         for (int i = 0; i < array.length; i++) {
             if (max < array[i]){
                 max = array[i];
@@ -41,9 +42,30 @@ class TaskPractice{
             if (min > array[i]){
                 min = array[i];
             }
+            avg += array[i]/array.length; // avg = avg + array
         }
         System.out.println("Максимальное значение = " + max);
         System.out.println("Минимальное значение = " + min);
-
+        System.out.println(avg);
+    }
+}
+class Task1Practice2{
+    public static void main(String[] args) {
+        int[] array = {20, 10, 30, 40, 50};
+        int min = array[0];
+        int max = array[0];
+        int avg = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (min > array[i]){
+                min = array[i];
+            }
+            if (max < array[i]){
+                max = array[i];
+            }
+            avg = avg + array[i] / array.length;
+        }
+        System.out.println("Максимальное значение = " + max);
+        System.out.println("Минимальное значение = " + min);
+        System.out.println("Среднее значение = " + avg);
     }
 }
