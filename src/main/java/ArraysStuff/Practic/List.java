@@ -1,7 +1,9 @@
 package ArraysStuff.Practic;
 
 import java.util.ArrayList;
-
+/**
+* Hello!
+ */
 public class List {
     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<>();
