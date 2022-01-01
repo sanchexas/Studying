@@ -43,3 +43,23 @@ class Task2Practice{
         System.out.println(Arrays.toString(myArray));
     }
 }
+class Task2Practice2{
+    public static void main(String[] args) {
+        int[] array = {20,40,50,12,30,5};
+        boolean isSorted = false;
+        int temp;
+        while (!isSorted){
+            isSorted = true;
+            for (int i = 0; i < array.length - 1; i++) {
+                if (array[i] > array[i + 1]){
+                    isSorted = false;
+                    temp = array[i];
+                    array[i] = array[i+1];
+                    array[i+1] = temp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(array));
+
+    }
+}
