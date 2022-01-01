@@ -1,6 +1,5 @@
 package pac_1;
 
-import java.nio.charset.StandardCharsets;
 
 public class BytesStuff {
     public static void main(String[] args) {
