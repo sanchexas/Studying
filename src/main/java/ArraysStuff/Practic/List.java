@@ -35,3 +35,20 @@ class FindWord{
         }
     }
 }
+class FindWord2{
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("wow");
+        list.add("no");
+        list.add("hi");
+        list.add("ass");
+
+        for (int i = 0; i < list.size(); i++) {
+            for (int j = 0; j < list.get(i).length(); j++) {
+                if (list.get(i).charAt(j) == 'o'){
+                    System.out.println(list.get(i));
+                }
+            }
+        }
+    }
+}
