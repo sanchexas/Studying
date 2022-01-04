@@ -23,3 +23,26 @@ public class BubbleSorting {
         System.out.println("After sorting: " + Arrays.toString(array));
     }
 }
+class BubbleSortingTraining{
+    public static void main(String[] args) {
+
+        int[] a = {4,2,6,5,7,3,1,9,8,10};
+        System.out.println(Arrays.toString(bubbleSorting(a)));
+    }
+
+    public static int[] bubbleSorting(int[] array){
+        boolean isSorted = false;
+        while (!isSorted) {
+            isSorted = true;
+            for (int i = 1; i < array.length; i++) {
+                if (array[i] < array[i - 1]){
+                    int temp = array[i];
+                    array[i] = array[i - 1];
+                    array[i - 1] = temp;
+                    isSorted = false;
+                }
+            }
+        }
+        return array;
+    }
+}
