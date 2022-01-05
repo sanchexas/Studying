@@ -1,6 +1,5 @@
 package Algorithms;
 
-import java.util.Arrays;
 
 /**
  * Сортировка выбором. Выбор индекса элемента, с которого начинать сортировку массива поиском минимального
@@ -44,5 +43,24 @@ class SelectionSorting2{
             }
         }
         return minElement;
+    }
+}
+class SelectionSortingTraining{
+    public static void main(String[] args) {
+
+        int[] a = {21,34,66,53,2,65,83,23,56,31};
+        System.out.println(findMinElInSelectedRange(a , 6));
+    }
+
+    public static int findMinElInSelectedRange(int[] array, int startSelectionAt){
+
+        int minEl = array[startSelectionAt];
+
+        for (int i = startSelectionAt + 1; i < array.length; i++) {
+            if (array[i] < minEl){
+                minEl = array[i];
+            }
+        }
+        return minEl;
     }
 }
