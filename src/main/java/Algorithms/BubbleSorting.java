@@ -2,6 +2,9 @@ package Algorithms;
 
 import java.util.Arrays;
 
+/**
+ * Сортировка пузырьком. Просто тренируюсь.
+ */
 public class BubbleSorting {
     public static void main(String[] args) {
         int[] array = {2,1,4,7,3,5,8,6,10,9};
