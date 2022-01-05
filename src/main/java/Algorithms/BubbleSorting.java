@@ -46,3 +46,26 @@ class BubbleSortingTraining{
         return array;
     }
 }
+class BubbleSortingTraining2{
+    public static void main(String[] args) {
+        int[] a = {8,3,4,1,6,2,9,7,5,10};
+        System.out.println(Arrays.toString(bubbleSorting(a)));
+    }
+
+    public static int[] bubbleSorting(int[] array){
+
+        boolean isSorted = false;
+        while (!isSorted) {
+            isSorted = true;
+            for (int i = 1; i < array.length; i++) {
+                if (array[i] < array[i - 1]) {
+                    int temp = array[i];
+                    array[i] = array[i - 1];
+                    array[i - 1] = temp;
+                    isSorted = false;
+                }
+            }
+        }
+        return array;
+    }
+}
