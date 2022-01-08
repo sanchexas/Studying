@@ -54,3 +54,32 @@ public class QuickSorting {
         System.out.println(Arrays.toString(x));
     }
 }
+class QuickSortingTraining{
+    public static void main(String[] args) {
+        int[] arr = {4, 8, 1, 10, 13, 5, 2, 7};
+        // Sorting the whole array
+        System.out.println(Arrays.toString(quicksort(arr, 0, arr.length - 1)));
+    }
+    static int[] quicksort(int[] arr, int low, int high){
+        if(low < high){
+            int p = partition(arr, low, high);
+            quicksort(arr, low, p-1);
+            quicksort(arr, p+1, high);
+        }
+        return arr;
+    }
+    static void swap(int[] arr, int low, int pivot){
+        int tmp = arr[low];
+        arr[low] = arr[pivot];
+        arr[pivot] = tmp;
+    }
+    static int partition(int[] arr, int low, int high){
+        int p = low, j;
+        for(j=low+1; j <= high; j++)
+            if(arr[j] < arr[low])
+                swap(arr, ++p, j);
+
+        swap(arr, low, p);
+        return p;
+    }
+}
