@@ -74,8 +74,8 @@ class QuickSortingTraining{
         arr[pivot] = tmp;
     }
     static int partition(int[] arr, int low, int high){
-        int p = low, j;
-        for(j=low+1; j <= high; j++)
+        int p = low;
+        for(int j = low + 1; j <= high; j++)
             if(arr[j] < arr[low])
                 swap(arr, ++p, j);
 
