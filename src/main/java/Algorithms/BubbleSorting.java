@@ -6,6 +6,7 @@ import java.util.Arrays;
  * Сортировка пузырьком. Просто тренируюсь.
  */
 // САША ПИДОР :)
+//Сам ты пидор ;)
     
 public class BubbleSorting {
     public static void main(String[] args) {
