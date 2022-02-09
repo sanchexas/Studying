@@ -31,6 +31,9 @@ public class AboutHashMap {
             System.out.println("Yay! That's right!");
 
         System.out.println(fun);
+        System.out.println(fun.replace("Bob", "123456"));   //replaced password :)
+        System.out.println(fun);
+
 
     }
 }
