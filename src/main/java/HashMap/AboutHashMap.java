@@ -16,8 +16,21 @@ public class AboutHashMap {
         age.put("Sergey", 19);
         age.put("Alexandr", 19);
         age.put("Pavel", 20);
-
         System.out.println(age);
         System.out.println(age.get("Sergey"));
+
+        HashMap<String, String> fun = new HashMap<String, String>();
+        fun.put("Bob", "pa$$w0rd");
+        fun.put("Raymond", "PubeWhore2000");
+        System.out.println(fun.containsKey("Bob"));
+        System.out.println(fun.containsValue("pa$$w0rd"));
+
+        if (!fun.containsValue("pa$$w0rd")){
+            System.out.println("Such a value doesn't exist!");
+        }else
+            System.out.println("Yay! That's right!");
+
+        System.out.println(fun);
+
     }
 }
