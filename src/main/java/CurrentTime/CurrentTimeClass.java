@@ -25,6 +25,11 @@ public class CurrentTimeClass {
             System.out.println("Happy Thursday!!!");
         }else
             System.out.println("Happy IDK!!!");
+
+        Date currentDate = new Date();
+
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy");
+        System.out.println(simpleDateFormat.format(currentDate));
     }
 
 
