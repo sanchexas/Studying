@@ -15,6 +15,16 @@ public class CurrentTimeClass {
         SimpleDateFormat simpleDate = new SimpleDateFormat("dd/MM/yyyy");
         System.out.println(simpleDate.format(currentTime));
 
+        SimpleDateFormat dayOfTheWeek = new SimpleDateFormat("EEEE");
+        System.out.println(dayOfTheWeek.format(currentTime));
+
+        if (dayOfTheWeek.format(currentTime).equals("Wednesday")){
+            System.out.println("Happy Wednesday!!!");
+        }
+        else if (dayOfTheWeek.format(currentTime).equals("Thursday")){
+            System.out.println("Happy Thursday!!!");
+        }else
+            System.out.println("Happy IDK!!!");
     }
 
 
