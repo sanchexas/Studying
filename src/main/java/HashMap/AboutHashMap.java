@@ -34,6 +34,12 @@ public class AboutHashMap {
         System.out.println(fun.replace("Bob", "123456"));   //replaced password :)
         System.out.println(fun);
 
+        HashMap<Integer, String> hashMap = new HashMap<Integer, String>();
+        hashMap.put(1,"A");
+        hashMap.put(2,"B");
+        hashMap.put(3,"C");
+        hashMap.put(4,"D");
 
+        System.out.println(hashMap);
     }
 }
