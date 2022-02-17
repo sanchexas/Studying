@@ -7,8 +7,8 @@ public class Encrypt {
         char[] chars = text.toCharArray();
         for (char c :  chars){
             c+=key;
-            System.out.println(c);
+            System.out.print(c);
         }
-        System.out.println(text);
+        System.out.println("\n" + text);
     }
 }
